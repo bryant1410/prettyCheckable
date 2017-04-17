@@ -1,8 +1,8 @@
-#What does it do?
+# What does it do?
 
 This plugin replaces the default checkboxes and radio inputs for better looking ones.
 
-##Features:
+## Features:
 
 * Compatible with IE7+, Chrome, Firefox, Safari and mobile browsers;
 * Custom design, kindly provided by [Bruno O. Barros](http://ilustrebob.com.br/);
@@ -13,7 +13,7 @@ This plugin replaces the default checkboxes and radio inputs for better looking 
 * Change events & Chainning preserved;
 * More area of click/touch. A plus for mobile devices.
 
-##Install & Setup
+## Install & Setup
 
 [Download the files](https://github.com/arthurgouveia/prettyCheckable/zipball/master) (or [fork it](https://github.com/arthurgouveia/prettyCheckable)) and include jQuery 1.9+ and prettyCheckable files (make sure you're mapping the sprite correctly on your CSS):
 
@@ -46,17 +46,17 @@ If you want to apply something to all the inputs but you need a few specific one
 
     <input type="checkbox" class="myClass" value="yes" id="answer" name="answer" data-color="green" />
 
-##Documentation
+## Documentation
 
 *None of the parameters is mandatory.*
 
-###Customizing
+### Customizing
 
-####CSS only (AKA lame option)
+#### CSS only (AKA lame option)
 
 You can simply use the images inside /img/sprite and create your own sprite manually. Make sure you update your sprite name, match it to the url inside your CSS and also the states positions for each one of the types and states the checkables can assume.
 
-####Grunt & Compass (Fuck Yeah Method)
+#### Grunt & Compass (Fuck Yeah Method)
 
 Sprites are being automagically generated with the help of Compass.
 The sizes of all the checkables are assumed to be the same, so that's calculated from your first image size.
@@ -69,7 +69,7 @@ The positioning of each sprite is also mapped automatically.
 
 ps.: If you're wondering why I set a capital letter in front of each file, that's done because I want Compass to generate the sprite it in a logical order. Found a better way? Pull Request!
 
-###Options
+### Options
 
 <table>
   <tbody>
@@ -117,7 +117,7 @@ ps.: If you're wondering why I set a capital letter in front of each file, that'
   </tbody>
 </table>
 
-###Inline Options
+### Inline Options
 
 *All inline configs will overwrite the ones you initialized the plugin with.*
 
@@ -167,7 +167,7 @@ ps.: If you're wondering why I set a capital letter in front of each file, that'
   </tbody>
 </table>
 
-###Methods
+### Methods
 
 <p><em>Using prettyCheckable is already pretty darn easy, right? What if I told you using it's methods is easy peasy lemon squeezy? Just use</em></p>
 
@@ -207,10 +207,10 @@ ps.: If you're wondering why I set a capital letter in front of each file, that'
 
 ### Knockout compatibility
 
-####Html
+#### Html
     <input type="checkbox" data-bind="checked: isFurnished, prettyCheckable: {color: 'gray', label: 'Furnished' }"/>
 
-####Custom binding
+#### Custom binding
     ko.bindingHandlers.prettyCheckable = {
         init: function(element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
             var val = ko.utils.unwrapObservable(valueAccessor());
@@ -221,6 +221,6 @@ ps.: If you're wondering why I set a capital letter in front of each file, that'
         }
     };
 
-##Customization
+## Customization
 
 If you want to create your own designed checkboxes or you just need a different color set, download the [prettyCheckable PSD](http://arthurgouveia.com/prettyCheckable/goodies/prettyCheckable.psd), do whatever you need to, add the entries to your CSS and pass the name of your color/style in the color or customClass parameters, according to the CSS code you can see on [prettyCheckable.css](http://arthurgouveia.com/prettyCheckable/js/prettyCheckable/prettyCheckable.css).
